@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Charges SYSTEM "charges_0.dtd">
+<Charges>
+    <CustomerId></CustomerId>
+    <TransactionId></TransactionId>
+    <Starting_date_of_work></Starting_date_of_work>
+    <Ending_date_of_work></Ending_date_of_work>
+    <Total_pay></Total_pay>
+</Charges>

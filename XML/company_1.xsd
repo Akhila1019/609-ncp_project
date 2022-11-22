@@ -1,0 +1,16 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://example.org/company" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CompanyId" type="xs:string"/>
+                <xs:element name="CompanyName" type="xs:string"/>
+                <xs:element name="CompanyInfo" type="xs:string"/>
+                <xs:element name="CompanyAddress" type="xs:string"/>
+                <xs:element name="Work" type="xs:string"/>
+                <xs:element name="No_of_workers" type="xs:string"/>
+                <xs:element name="Company_Salary_per_day" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

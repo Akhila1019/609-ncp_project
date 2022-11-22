@@ -1,0 +1,18 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://example.org/worker" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Worker">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="WorkerId" type="xs:string"/>
+                <xs:element name="WorkerName" type="xs:string"/>
+                <xs:element name="WorkerAge" type="xs:string"/>
+                <xs:element name="WorkerAddress" type="xs:string"/>
+                <xs:element name="WorkerGender" type="xs:string"/>
+                <xs:element name="WorkerPhoneNo" type="xs:string"/>
+                <xs:element name="Occupation" type="xs:string"/>
+                <xs:element name="Experience" type="xs:string"/>
+                <xs:element name="Salary_per_day" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

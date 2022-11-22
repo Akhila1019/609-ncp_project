@@ -1,0 +1,10 @@
+<!ELEMENT Worker (WorkerName,WorkerAge,WorkerAddress,WorkerGender,WorkerPhoneNo,Occupation,Experience,Salary_per_day)>
+<!ATTLIST Worker WorkerId ID #REQUIRED>
+<!ELEMENT WorkerName (#PCDATA)>
+<!ELEMENT WorkerAge (#PCDATA)>
+<!ELEMENT WorkerAddress (#PCDATA)>
+<!ELEMENT WorkerGender (#PCDATA)>
+<!ELEMENT WorkerPhoneNo (#PCDATA)>
+<!ELEMENT Occupation (#PCDATA)>
+<!ELEMENT Experience (#PCDATA)>
+<!ELEMENT Salary_per_day (#PCDATA)>

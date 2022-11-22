@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Company Registeration Page</title>
+    
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body class="back-image">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsl(0, 0%, 96%)">
+        <a class="navbar-brand" href="#" >
+            <img src="../images/logo.png" class="navbar-image"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="w3-bar collapse navbar-collapse" id="navbarNav" >
+          <a href="index.html" class="w3-bar-item w3-button navbar-nav ml-auto" id="nav-text1">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button" id="nav-text2" >Services</a>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button" id="nav-text3">
+              User Profile <i class="fa fa-caret-down" ></i>
+            </button>
+            <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+              <a href="/view_profile" class="w3-bar-item w3-button" id="nav-text4">View</a>
+              <a href="/update_profile" class="w3-bar-item w3-button" id="nav-text4">Update</a>    
+              <a href="delete_profile.html" class="w3-bar-item w3-button" id="nav-text4">Delete</a>
+            </div>
+          </div>
+      </div>
+      </nav>
+        <br>
+        <div class="container">
+
+                    <div class="col-12 col-md-6 col-lg-5 mb-5 mb-lg-0 bg-transparent m-auto">
+                        <form action="/comp_reg" method="POST">
+                          <div class="card-body">
+                            <h3 class="mb-5 text-center">Create your Account</h3>
+                          
+                            <div class="form-outline mb-2">
+                              <label class="form-label" for="name" id="name">Company Name:</label>
+                              <input type="text" name="name" class="form-control form-control-lg" placeholder="Enter Company Name" ><br/>
+                            </div>
+
+                            <div class="form-outline mb-2">
+                              <label class="form-label" for="info" id="info">Company Info:</label>
+                              <input type="text" name="info" class="form-control form-control-lg" placeholder="Enter Company Info"><br/>
+                            </div>
+              
+                            <div class="form-outline mb-2">
+                              <label class="form-label" for="address" id="address">Company Address:</label>
+                              <input type="text" name="address" class="form-control form-control-lg" placeholder="Enter your Address"><br/>
+                            </div>
+  
+                            <div class="form-outline mb-2">
+                                <label class="form-label" for="occupation" id="occupation">Occupation:</label>
+                                <select name="occupation" id="occupation" class="form-control-lg" required >
+                                  <option value="Food delivery">Food delivery</option>
+                                  <option value="Grocery delivery">Grocery delivery</option>
+                                  <option value="Medicine delivery">Medicine delivery</option>
+                                  <option value="Milk delivery">Milk delivery</option>
+                                  <option value="Plumber">Plumber</option>
+                                  <option value="Driver">Driver</option>
+                                  <option value="Electrician">Electrician</option>
+                                  <option value="Gardener">Gardener</option>
+                                  <option value="Housemaid">Housemaid</option>
+                              </select><br/>
+                            </div>
+
+                            <div>
+                                <label class="form-label" for="noofworkers" id="noofworkers">Number of Workers:</label>
+                                <input type="text" name="noofworkers" class="form-control form-control-lg" placeholder="Enter number of workers"><br/>
+                            </div>
+
+                            <div>
+                                <label class="form-label" for="salary" id="salary">Salary per day:</label>
+                                <input type="number" name="salary" class="form-control form-control-lg" placeholder="Enter Salary per day"><br/>
+                            </div>
+
+                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                <a href="register.html">
+                                    <br>
+                                    <div class="col-12 col-md-4">
+                                        <button type="button" class="btn btn-primary btn-lg align-items-center" >Back</button>
+                                    </div>
+                                </a>
+                                <a>
+                                  <br>
+                                  <div class="col-12 col-md-5">
+                                      <input type="submit" class="btn btn-success btn-lg align-items-center" >
+                                  </div>
+                                </a>
+                            </div>
+                          </div>
+                    </form>
+                  </div>
+</body>
+</html>

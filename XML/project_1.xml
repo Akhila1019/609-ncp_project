@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="http://example.org/project" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://example.org/project project_1.xsd">
+
+    <Customer CustomerId="i-1">
+        <Name></Name>
+        <Age></Age>
+        <Address></Address>
+        <Gender></Gender>
+        <PhoneNo></PhoneNo>
+    </Customer> 
+
+    <Company CompanyId="i-2">
+        <CompanyName></CompanyName>
+        <CompanyInfo></CompanyInfo>
+        <CompanyAddress></CompanyAddress>
+        <Occupation></Occupation>
+        <No_of_workers></No_of_workers>
+        <Salary_per_day></Salary_per_day>
+    </Company>
+
+    <Worker WorkerId="i-3">
+        <WorkerName></WorkerName>
+        <WorkerAge></WorkerAge>
+        <WorkerAddress></WorkerAddress>
+        <WorkerGender></WorkerGender>
+        <WorkerPhoneNo></WorkerPhoneNo>
+        <Occupation></Occupation>
+        <Experience></Experience>
+        <Salary_per_day></Salary_per_day>
+    </Worker>
+
+    <Charges>
+        <CustomerId></CustomerId>
+        <TransactionId></TransactionId>
+        <Starting_date_of_work></Starting_date_of_work>
+        <Ending_date_of_work></Ending_date_of_work>
+        <Total_pay></Total_pay>
+    </Charges>
+
+    <User>
+        <Username></Username>
+        <Password></Password>
+    </User>
+
+</Project>

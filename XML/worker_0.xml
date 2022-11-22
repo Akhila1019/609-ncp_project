@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Worker SYSTEM "worker_0.dtd">
+<Worker WorkerId="i-1">
+    <WorkerName></WorkerName>
+    <WorkerAge></WorkerAge>
+    <WorkerAddress></WorkerAddress>
+    <WorkerGender></WorkerGender>
+    <WorkerPhoneNo></WorkerPhoneNo>
+    <Occupation></Occupation>
+    <Experience></Experience>
+    <Salary_per_day></Salary_per_day>
+</Worker>

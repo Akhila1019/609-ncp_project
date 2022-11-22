@@ -1,0 +1,6 @@
+<!ELEMENT Charges (CustomerId,TransactionId,Starting_date_of_work,Ending_date_of_work,Total_pay)>
+<!ELEMENT CustomerId (#PCDATA)>
+<!ELEMENT TransactionId (#PCDATA)>
+<!ELEMENT Starting_date_of_work (#PCDATA)>
+<!ELEMENT Ending_date_of_work (#PCDATA)>
+<!ELEMENT Total_pay (#PCDATA)>

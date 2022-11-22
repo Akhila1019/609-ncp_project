@@ -1,0 +1,87 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://example.org/project" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Project">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Customer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Age" type="xs:string"/>
+                            <xs:element name="Address" type="xs:string"/>
+                            <xs:element name="Gender" type="xs:string"/>
+                            <xs:element name="PhoneNo" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="CustomerId">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:ID"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Company">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CompanyName" type="xs:string"/>
+                            <xs:element name="CompanyInfo" type="xs:string"/>
+                            <xs:element name="CompanyAddress" type="xs:string"/>
+                            <xs:element name="Occupation" type="xs:string"/>
+                            <xs:element name="No_of_workers" type="xs:string"/>
+                            <xs:element name="Salary_per_day" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="CompanyId">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:ID"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Worker">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="WorkerName" type="xs:string"/>
+                            <xs:element name="WorkerAge" type="xs:string"/>
+                            <xs:element name="WorkerAddress" type="xs:string"/>
+                            <xs:element name="WorkerGender" type="xs:string"/>
+                            <xs:element name="WorkerPhoneNo" type="xs:string"/>
+                            <xs:element name="Occupation" type="xs:string"/>
+                            <xs:element name="Experience" type="xs:string"/>
+                            <xs:element name="Salary_per_day" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="WorkerId">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:ID"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Charges">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CustomerId" type="xs:string"/>
+                            <xs:element name="TransactionId" type="xs:string"/>
+                            <xs:element name="Starting_date_of_work" type="xs:string"/>
+                            <xs:element name="Ending_date_of_work" type="xs:string"/>
+                            <xs:element name="Total_pay" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="User">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Username" type="xs:string"/>
+                            <xs:element name="Password" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+        
+    </xs:element>
+</xs:schema>

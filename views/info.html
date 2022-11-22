@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Login Page</title>
+    
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+      
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+	</head>
+
+    <body class="back-image">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsl(0, 0%, 96%)">
+          <a class="navbar-brand" href="#" >
+              <img src="./images/logo.png" class="navbar-image"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="w3-bar collapse navbar-collapse" id="navbarNav" >
+            <a href="index.html" class="w3-bar-item w3-button navbar-nav ml-auto" id="nav-text1">Home</a>
+            <a href="services.html" class="w3-bar-item w3-button" id="nav-text2" >Services</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button" id="nav-text3">
+                User Profile <i class="fa fa-caret-down" ></i>
+              </button>
+              <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+                <a href="/view_profile" class="w3-bar-item w3-button" id="nav-text4">View</a>
+                <a href="/update_profile" class="w3-bar-item w3-button" id="nav-text4">Update</a>    
+                <a href="delete_profile.html" class="w3-bar-item w3-button" id="nav-text4">Delete</a>
+              </div>
+            </div>
+        </div>
+        </nav>
+        
+        <div class="sidenav">
+          <nav class="w3-sidebar w3-bar-block w3-center" >
+              
+              <a class="w3-bar-item w3-button w3-padding-large w3-hover-blue-gray " href="#feedback" >
+                <i class="fa fa-comment w3-xxlarge"></i>
+                <p>FEEDBACK</p>
+              </a>
+              <a class="w3-bar-item w3-button w3-padding-large w3-hover-blue-gray " href="#contact" >
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>CONTACT</p>
+              </a>
+              <a class="w3-bar-item w3-button w3-padding-large w3-hover-blue-gray" href="#payment">
+                <i class="fa fa-credit-card w3-xxlarge"></i>
+                <p>PAYMENT</p>
+              </a>
+          </nav>
+        </div>
+        <div class="main" ng-app="mainApp">
+          <div ng-view></div>
+
+            <script type = "text/ng-template" id = "payment.html">
+              <link rel="stylesheet" href="./css/payment.css">
+              <h2 class="my-2 text-center">{{message}}</h2>
+                <div class="container">
+
+                  <form action="/payment_success" method="POST">
+              
+                      <div class="row">
+              
+                          <div class="col">
+              
+                              <h3 class="title">billing address</h3>
+              
+                              <div class="inputBox">
+                                  <span>Full Name :</span>
+                                  <input type="text" name="name" class="form-control form-control-lg" required placeholder="Enter your Full name">
+                              </div>
+                              <div class="inputBox">
+                                  <span>Email :</span>
+                                  <input type="email" name="email" class="form-control form-control-lg" required placeholder="Enter your email">
+                              </div>
+                              <div class="inputBox">
+                                  <span>Address :</span>
+                                  <input type="text" name="address" class="form-control form-control-lg" required placeholder="Enter your address">
+                              </div>
+                              <div class="inputBox">
+                                  <span>City :</span>
+                                  <input type="text" name="city" class="form-control form-control-lg" required placeholder="Enter your city">
+                              </div>
+              
+                              <div class="flex">
+                                  <div class="inputBox">
+                                      <span>State :</span>
+                                      <input type="text" name="state" class="form-control form-control-lg"  required placeholder="Enter your state">
+                                  </div>
+                                  <div class="inputBox">
+                                      <span>Zip code :</span>
+                                      <input type="text" name="zipcode" class="form-control form-control-lg" required placeholder="Enter your zipcode">
+                                  </div>
+                              </div>
+              
+                          </div>
+              
+                          <div class="col">
+              
+                              <h3 class="title">Payment</h3>
+              
+                              <div class="inputBox">
+                                  <span>cards accepted :</span>
+                                  <img src="images/card_img.png" alt="">
+                              </div>
+                              <div class="inputBox">
+                                  <span>Name on card :</span>
+                                  <input type="text" class="form-control form-control-lg" required placeholder="Enter name on card">
+                              </div>
+                              <div class="inputBox">
+                                  <span>Credit card number :</span>
+                                  <input type="text" class="form-control form-control-lg" required placeholder="Enter your credit card number">
+                              </div>
+                              <div class="inputBox">
+                                  <span>Exp month :</span>
+                                  <input type="text" class="form-control form-control-lg" required placeholder="Exp month">
+                              </div>
+              
+                              <div class="flex">
+                                  <div class="inputBox">
+                                      <span>Exp year :</span>
+                                      <input type="number" class="form-control form-control-lg" required  placeholder="Exp year">
+                                  </div>
+                                  <div class="inputBox">
+                                      <span>CVV :</span>
+                                      <input type="text" class="form-control form-control-lg" required placeholder="Enter CVV">
+                                  </div>
+                              </div>
+              
+                          </div>
+                  
+                      </div>
+              
+                      <input type="submit" value="Proceed to Pay" class="submit-btn">
+              
+                  </form>
+              
+              </div>    
+                  
+             </script>
+             
+             <script type = "text/ng-template" id = "feedback.html">
+                
+              <h2 class="my-2 text-center">{{message}}</h2>
+                  <p class="my-2 text-center">Hey Please complete the feedback, It will help us to serve you better.</p>
+                  <div>
+                    <div class="col-12 col-md-6 mb-5 mb-lg-0 m-auto">
+                      <form action="/feedback_success" method="POST">
+                        <div class="card-body">
+                          
+                          
+                          <!-- Username input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="uname">Username:</label>
+                            <input type="text" name="uname" class="form-control form-control-lg" required placeholder="Enter Username" ><br/>
+                          </div>
+                           
+                        <!-- Password input -->  
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="email" id="email">Email address:</label>
+                          <input type="email" name="email" class="form-control form-control-lg" required placeholder="Enter email address"><br/>
+                        </div>
+              
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="feedback" id="feedback">Feedback:</label>
+                          <textarea rows="4" cols="50" name="feedback" class="form-control form-control-lg"required placeholder="Enter feedback"></textarea>
+                          <br/>
+                        </div>
+              
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                          <button type="submit" class="btn btn-primary btn-md"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
+                          
+                        </div>
+    
+                        </div>
+  
+                      </form>
+                    </div>
+                    <br>
+             </script>
+
+             <script type = "text/ng-template" id = "contact.html">
+              
+                <h2 class="my-2 text-center">{{message}}</h2>
+                <div>
+                  <div class="col-12 col-md-6 mb-5 mb-lg-0 m-auto">
+                    <form action="/contact_success" method="POST">
+                      <div class="card-body">
+                        
+                        
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="uname">Username:</label>
+                          <input type="text" name="uname" class="form-control form-control-lg" required placeholder="Enter Username" ><br/>
+                        </div>
+                         
+                      <!-- Password input -->  
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="email" id="email">Email address:</label>
+                        <input type="email" name="email" class="form-control form-control-lg" required placeholder="Enter email address"><br/>
+                      </div>
+            
+                      
+            
+                      <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="submit" class="btn btn-primary btn-md"
+                          style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
+                        
+                      </div>
+  
+                      </div>
+
+                    </form>
+                  </div>
+                  <br>
+                  <div class="m-auto">
+                    <img src="images/phone-ringing.png" class="img-size" />
+                    <img src="images/gmail.png" class="img-size" />
+                    <img src="images/map.png" class="img-size" />
+                    <div class="divider d-flex align-items-center my-4">
+                      <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                    </div>
+                    <img src="images/twitter.png" class="img-size" />
+                    <img src="images/instagram.png" class="img-size" />
+                    <img src="images/facebook.png" class="img-size" />
+                  </div>
+                  <br>
+                </div>
+             </script>
+        </div>
+  
+        <script>
+            var mainApp = angular.module("mainApp", ['ngRoute']);
+            mainApp.config(['$routeProvider', function($routeProvider) {
+               $routeProvider
+               
+               .when('/payment', {
+                  templateUrl: 'payment.html',
+                  controller: 'PaymentController'
+               })
+               .when('/feedback', {
+                  templateUrl: 'feedback.html',
+                  controller: 'FeedbackController'
+               })
+               .when('/contact', {
+                  templateUrl: 'contact.html',
+                  controller: 'ContactController'
+               })
+               .otherwise({
+                  redirectTo: '/feedback'
+               });
+            }]);
+            mainApp.controller('PaymentController', function($scope) {
+               $scope.message = "Payment";
+            });
+            mainApp.controller('FeedbackController', function($scope) {
+               $scope.message = "Submit your Feedback";
+            });
+            mainApp.controller('ContactController', function($scope) {
+               $scope.message = 'Contact Us';
+
+            });
+         </script>
+
+
+      </body>
+</html>

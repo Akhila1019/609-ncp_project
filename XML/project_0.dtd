@@ -1,0 +1,41 @@
+<!ELEMENT Project (Customer,Company,Worker,Charges,User)>
+
+<!ELEMENT Customer (CustomerName,CustomerAge,CustomerAddress,CustomerGender,CustomerPhoneNo)>
+<!ATTLIST Customer CustomerId ID #REQUIRED> 
+<!ELEMENT CustomerName (#PCDATA)>
+<!ELEMENT CustomerAge (#PCDATA)>
+<!ELEMENT CustomerAddress (#PCDATA)>
+<!ELEMENT CustomerGender (#PCDATA)>
+<!ELEMENT CustomerPhoneNo (#PCDATA)>
+
+<!ELEMENT Company (CompanyName,CompanyInfo,CompanyAddress,Work,No_of_workers,Company_Salary_per_day)>
+<!ATTLIST Company CompanyId ID #REQUIRED>
+<!ELEMENT CompanyName (#PCDATA)>
+<!ELEMENT CompanyInfo (#PCDATA)>
+<!ELEMENT CompanyAddress (#PCDATA)>
+<!ELEMENT Work (#PCDATA)>
+<!ELEMENT No_of_workers (#PCDATA)>
+<!ELEMENT Company_Salary_per_day (#PCDATA)>
+
+<!ELEMENT Worker (WorkerName,WorkerAge,WorkerAddress,WorkerGender,WorkerPhoneNo,Occupation,Experience,Salary_per_day)>
+<!ATTLIST Worker WorkerId ID #REQUIRED>
+<!ELEMENT WorkerName (#PCDATA)>
+<!ELEMENT WorkerAge (#PCDATA)>
+<!ELEMENT WorkerAddress (#PCDATA)>
+<!ELEMENT WorkerGender (#PCDATA)>
+<!ELEMENT WorkerPhoneNo (#PCDATA)>
+<!ELEMENT Occupation (#PCDATA)>
+<!ELEMENT Experience (#PCDATA)>
+<!ELEMENT Salary_per_day (#PCDATA)>
+
+<!ELEMENT Charges (CustomerId,TransactionId,Starting_date_of_work,Ending_date_of_work,Total_pay)>
+<!ELEMENT CustomerId (#PCDATA)>
+<!ELEMENT TransactionId (#PCDATA)>
+<!ELEMENT Starting_date_of_work (#PCDATA)>
+<!ELEMENT Ending_date_of_work (#PCDATA)>
+<!ELEMENT Total_pay (#PCDATA)>
+
+<!ELEMENT User (Username,Password)>
+<!ELEMENT Username (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+

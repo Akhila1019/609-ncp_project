@@ -1,0 +1,15 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://example.org/customer" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Customer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CustomerId" type="xs:string"/>
+                <xs:element name="CustomerName" type="xs:string"/>
+                <xs:element name="CustomerAge" type="xs:string"/>
+                <xs:element name="CustomerAddress" type="xs:string"/>
+                <xs:element name="CustomerGender" type="xs:string"/>
+                <xs:element name="CustomerPhoneNo" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

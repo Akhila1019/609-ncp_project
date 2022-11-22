@@ -1,0 +1,18 @@
+{
+    "result" : [
+        {
+            "name": "John",
+            "marks":{
+              "math":"78",
+              "english":"90"
+            }
+          },
+          {
+            "name": "Mike",
+            "marks":{
+              "math":"67",
+              "english":"86"
+            }
+          }      
+    ]
+}

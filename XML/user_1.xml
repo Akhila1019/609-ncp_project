@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<User xmlns="http://example.org/user" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://example.org/user user_1.xsd">
+    <Username></Username>
+    <Password></Password>
+</User>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Company SYSTEM "company_0.dtd">
+<Company CompanyId="i-2">
+    <CompanyName></CompanyName>
+    <CompanyInfo></CompanyInfo>
+    <CompanyAddress></CompanyAddress>
+    <Work></Work>
+    <No_of_workers></No_of_workers>
+    <Company_Salary_per_day></Company_Salary_per_day>
+</Company>

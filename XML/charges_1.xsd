@@ -1,0 +1,14 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://example.org/charges" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Charges">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CustomerId" type="xs:string"/>
+                <xs:element name="TransactionId" type="xs:string"/>
+                <xs:element name="Starting_date_of_work" type="xs:string"/>
+                <xs:element name="Ending_date_of_work" type="xs:string"/>
+                <xs:element name="Total_pay" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

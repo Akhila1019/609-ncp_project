@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "project_0.dtd">
+<Project>
+    <Customer CustomerId="i-1">
+        <CustomerName></CustomerName>
+        <CustomerAge></CustomerAge>
+        <CustomerAddress></CustomerAddress>
+        <CustomerGender></CustomerGender>
+        <CustomerPhoneNo></CustomerPhoneNo>
+    </Customer> 
+
+    <Company CompanyId="i-2">
+        <CompanyName></CompanyName>
+        <CompanyInfo></CompanyInfo>
+        <CompanyAddress></CompanyAddress>
+        <Work></Work>
+        <No_of_workers></No_of_workers>
+        <Company_Salary_per_day></Company_Salary_per_day>
+    </Company>
+
+    <Worker WorkerId="i-3">
+        <WorkerName></WorkerName>
+        <WorkerAge></WorkerAge>
+        <WorkerAddress></WorkerAddress>
+        <WorkerGender></WorkerGender>
+        <WorkerPhoneNo></WorkerPhoneNo>
+        <Occupation></Occupation>
+        <Experience></Experience>
+        <Salary_per_day></Salary_per_day>
+    </Worker>
+
+    <Charges>
+        <CustomerId></CustomerId>
+        <TransactionId></TransactionId>
+        <Starting_date_of_work></Starting_date_of_work>
+        <Ending_date_of_work></Ending_date_of_work>
+        <Total_pay></Total_pay>
+    </Charges>
+
+    <User>
+        <Username></Username>
+        <Password></Password>
+    </User>
+
+</Project>

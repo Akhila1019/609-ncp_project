@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="driver.xsl"?>
+<Driver>
+    <Workers>
+        <Worker>
+            <Name>Alisha</Name>
+            <Age>21</Age>
+            <Address>Kerala</Address>
+            <Gender>Female</Gender>
+            <PhoneNumber>9876543456</PhoneNumber>
+            <Type>Individual Worker</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Ramya</Name>
+            <Age>40</Age>
+            <Address>Tamilnadu</Address>
+            <Gender>Female</Gender>
+            <PhoneNumber>9871113456</PhoneNumber>
+            <Type>Individual Worker</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Ram</Name>
+            <Age>25</Age>
+            <Address>Kerala</Address>
+            <Gender>Male</Gender>
+            <PhoneNumber>8886543456</PhoneNumber>
+            <Type>Individual Worker</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Arun</Name>
+            <Age>30</Age>
+            <Address>Hyderabad</Address>
+            <Gender>Male</Gender>
+            <PhoneNumber>9876543111</PhoneNumber>
+            <Type>Company</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Amir</Name>
+            <Age>45</Age>
+            <Address>Coimbatore</Address>
+            <Gender>Male</Gender>
+            <PhoneNumber>9876543456</PhoneNumber>
+            <Type>Company</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Nisha</Name>
+            <Age>26</Age>
+            <Address>Kakinada</Address>
+            <Gender>Female</Gender>
+            <PhoneNumber>9876543456</PhoneNumber>
+            <Type>Company</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+        <Worker>
+            <Name>Ali</Name>
+            <Age>21</Age>
+            <Address>Kerala</Address>
+            <Gender>Male</Gender>
+            <PhoneNumber>7776543456</PhoneNumber>
+            <Type>Individual Worker</Type>
+            <FurtherInfo> </FurtherInfo>
+        </Worker>
+    </Workers>
+</Driver>

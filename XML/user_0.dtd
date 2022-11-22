@@ -1,0 +1,3 @@
+<!ELEMENT User (Username,Password)>
+<!ELEMENT Username (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>

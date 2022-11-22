@@ -1,0 +1,7 @@
+<!ELEMENT Customer (CustomerName,CustomerAge,CustomerAddress,CustomerGender,CustomerPhoneNo)>
+<!ATTLIST Customer CustomerId ID #REQUIRED> 
+<!ELEMENT CustomerName (#PCDATA)>
+<!ELEMENT CustomerAge (#PCDATA)>
+<!ELEMENT CustomerAddress (#PCDATA)>
+<!ELEMENT CustomerGender (#PCDATA)>
+<!ELEMENT CustomerPhoneNo (#PCDATA)>

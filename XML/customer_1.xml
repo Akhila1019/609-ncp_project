@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Customer xmlns="http://example.org/customer" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://example.org/customer customer_1.xsd">
+    <CustomerId></CustomerId>
+    <CustomerName></CustomerName>
+    <CustomerAge></CustomerAge>
+    <CustomerAddress></CustomerAddress>
+    <CustomerGender></CustomerGender>
+    <CustomerPhoneNo></CustomerPhoneNo>
+</Customer>

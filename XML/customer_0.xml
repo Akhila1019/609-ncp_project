@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Customer SYSTEM "customer_0.dtd">
+<Customer CustomerId="i-1">
+    <CustomerName></CustomerName>
+    <CustomerAge></CustomerAge>
+    <CustomerAddress></CustomerAddress>
+    <CustomerGender></CustomerGender>
+    <CustomerPhoneNo></CustomerPhoneNo>
+</Customer> 

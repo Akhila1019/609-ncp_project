@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns="http://example.org/company" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://example.org/company company_1.xsd">
+    <CompanyId></CompanyId>
+    <CompanyName></CompanyName>
+    <CompanyInfo></CompanyInfo>
+    <CompanyAddress></CompanyAddress>
+    <Work></Work>
+    <No_of_workers></No_of_workers>
+    <Company_Salary_per_day></Company_Salary_per_day>
+</Company>

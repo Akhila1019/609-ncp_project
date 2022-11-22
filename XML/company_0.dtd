@@ -1,0 +1,8 @@
+<!ELEMENT Company (CompanyName,CompanyInfo,CompanyAddress,Work,No_of_workers,Company_Salary_per_day)>
+<!ATTLIST Company CompanyId ID #REQUIRED>
+<!ELEMENT CompanyName (#PCDATA)>
+<!ELEMENT CompanyInfo (#PCDATA)>
+<!ELEMENT CompanyAddress (#PCDATA)>
+<!ELEMENT Work (#PCDATA)>
+<!ELEMENT No_of_workers (#PCDATA)>
+<!ELEMENT Company_Salary_per_day (#PCDATA)>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Worker xmlns="http://example.org/worker" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://example.org/worker worker_1.xsd">
+    <WorkerId></WorkerId>
+    <WorkerName></WorkerName>
+    <WorkerAge></WorkerAge>
+    <WorkerAddress></WorkerAddress>
+    <WorkerGender></WorkerGender>
+    <WorkerPhoneNo></WorkerPhoneNo>
+    <Occupation></Occupation>
+    <Experience></Experience>
+    <Salary_per_day></Salary_per_day>
+</Worker>
